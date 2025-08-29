@@ -52,7 +52,7 @@ public class Picture
             roof.moveHorizontal(20);
             roof.moveVertical(-60);
             roof.makeVisible();
-    
+            
             sun.changeColor("blue");
             sun.moveHorizontal(100);
             sun.moveVertical(-40);
@@ -60,6 +60,12 @@ public class Picture
             sun.makeVisible();
             
             sunSet(150);
+            
+            
+            
+            drawn = true;
+    
+            
             
             sun2.changeColor("yellow");
             sun2.moveHorizontal(-200);
@@ -73,7 +79,31 @@ public class Picture
     
         }
     }
-
+    
+    
+    /**
+     * Draw this picture.
+     */
+    public void sunSet()
+    {
+        if(!drawn) {
+            
+    
+            sun.changeColor("blue");
+            sun.moveHorizontal(100);
+            sun.moveVertical(-40);
+            sun.changeSize(80);
+            sun.makeVisible();
+            
+            sunSet(150);
+            
+            
+            
+            drawn = true;
+            
+    
+        }
+    }
     /**
      * Change this picture to black/white display
      */
