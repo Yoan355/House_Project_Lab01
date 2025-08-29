@@ -82,29 +82,14 @@ public class Picture
     
     
     /**
-     * Draw this picture.
+     * Execute Sunset
      */
-    public void sunSet()
+     public void Sunset ()
     {
-        if(!drawn) {
-            
-    
-            sun.changeColor("blue");
-            sun.moveHorizontal(100);
-            sun.moveVertical(-40);
-            sun.changeSize(80);
-            sun.makeVisible();
-            
-            sunSet(150);
-            
-            
-            
-            drawn = true;
-            
-    
-        }
+        sun.slowMoveVertical(200);
     }
-    /**
+    
+       /**
      * Change this picture to black/white display
      */
     public void setBlackAndWhite()
