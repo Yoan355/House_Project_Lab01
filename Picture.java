@@ -59,7 +59,7 @@ public class Picture
             sun.changeSize(80);
             sun.makeVisible();
             
-            sunSet(300);
+            sunSet(150);
             
             sun2.changeColor("yellow");
             sun2.moveHorizontal(-200);
