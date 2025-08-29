@@ -59,11 +59,15 @@ public class Picture
             sun.changeSize(80);
             sun.makeVisible();
             
+            sunSet(300);
+            
             sun2.changeColor("yellow");
             sun2.moveHorizontal(-200);
             sun2.moveVertical(-40);
             sun2.changeSize(80);
             sun2.makeVisible();
+            
+            
             drawn = true;
             
     
@@ -82,6 +86,12 @@ public class Picture
         sun2.changeColor("black");
     }
 
+    
+    
+    
+    
+    
+    
     /**
      * Change this picture to use color display
      */
@@ -92,5 +102,11 @@ public class Picture
         roof.changeColor("green");
         sun.changeColor("yellow");
         sun2.changeColor("blue");
+    }
+
+    public void sunSet(int distance) 
+    {
+        sun.slowMoveVertical(distance);
+    
     }
 }
