@@ -54,15 +54,13 @@ public class Picture
             roof.moveHorizontal(20);
             roof.moveVertical(-60);
             roof.makeVisible();
-    
+            
             sun.changeColor("blue");
             sun.moveHorizontal(100);
             sun.moveVertical(-40);
             sun.changeSize(80);
             sun.makeVisible();
-            
-            person.makeVisible();
-            
+
             sunSet(300);
             person.slowMoveHorizontal(-150);
             
@@ -78,8 +76,17 @@ public class Picture
     
         }
     }
-
+    
+    
     /**
+     * Execute Sunset
+     */
+     public void Sunset ()
+    {
+        sun.slowMoveVertical(200);
+    }
+    
+       /**
      * Change this picture to black/white display
      */
     public void setBlackAndWhite()

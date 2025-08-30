@@ -113,7 +113,7 @@ public class Person
         }
         else 
         {
-            delta = 1;
+            delta = 20;
         }
 
         for(int i = 0; i < distance; i++)
