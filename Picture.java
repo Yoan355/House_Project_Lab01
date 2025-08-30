@@ -66,7 +66,6 @@ public class Picture
             
             sunSet(150);
             
-            
             //sun2.changeColor("yellow");
             //sun2.moveHorizontal(-200);
             //sun2.moveVertical(-40);
