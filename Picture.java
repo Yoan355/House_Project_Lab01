@@ -17,6 +17,7 @@ public class Picture
     private Circle sun;
     private Circle sun2;
     private boolean drawn;
+    private Person person;
 
     /**
      * Constructor for objects of class Picture
@@ -28,6 +29,7 @@ public class Picture
         roof = new Triangle();  
         sun = new Circle();
         sun2 = new Circle();
+        person = new Person();
         drawn = false;
     }
 
@@ -59,13 +61,16 @@ public class Picture
             sun.changeSize(80);
             sun.makeVisible();
             
-            sunSet(300);
+            person.makeVisible();
             
-            sun2.changeColor("yellow");
-            sun2.moveHorizontal(-200);
-            sun2.moveVertical(-40);
-            sun2.changeSize(80);
-            sun2.makeVisible();
+            sunSet(300);
+            person.slowMoveHorizontal(-150);
+            
+            //sun2.changeColor("yellow");
+            //sun2.moveHorizontal(-200);
+            //sun2.moveVertical(-40);
+            //sun2.changeSize(80);
+            //sun2.makeVisible();
             
             
             drawn = true;
